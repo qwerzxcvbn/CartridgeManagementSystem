@@ -1,0 +1,23 @@
+﻿<Window x:Class="CartridgeManagementSystem.WindowListUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CartridgeManagementSystem"
+        mc:Ignorable="d"
+        Title="WindowListUser" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Список Пользователей" FontSize="25" HorizontalAlignment="Center"></TextBlock>
+            <Button Content="Добавить" FontSize="20" HorizontalAlignment="Left" Width="200" Name="AddUser" Click="AddUser_Click"></Button>
+            <Button Content="Обновить" FontSize="20" HorizontalAlignment="Right" Width="200" Name="Up" Margin="0 -31 0 0" Click="Up_Click"></Button>
+            <DataGrid Name="DataUser" AutoGenerateColumns="False" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Path=login}" MinWidth="260" MaxWidth="260" Header="Логин"></DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding Path=pass}" MinWidth="260" MaxWidth="260" Header="Пароль"></DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding Path=Roles.nameRole}" MinWidth="250" MaxWidth="250" Header="Роль"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

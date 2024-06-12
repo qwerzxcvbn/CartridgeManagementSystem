@@ -1,0 +1,53 @@
+﻿<Window x:Class="CartridgeManagementSystem.WindowRedactCartrige"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CartridgeManagementSystem"
+        mc:Ignorable="d"
+        Title="WindowRedactCartrige" Height="570" Width="600">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Добавление картриджа" FontSize="25" HorizontalAlignment="Center" Margin="0 0 0 25"></TextBlock>
+
+            <TextBlock Text="Тип" FontSize="15"></TextBlock>
+            <TextBox Margin="0 0 0 20" Name="Type"></TextBox>
+            <TextBlock Text="Модель" FontSize="15"></TextBlock>
+            <TextBox Margin="0 0 0 20" Name="Model"></TextBox>
+            <TextBlock Text="Серийный номер" FontSize="15"></TextBlock>
+            <TextBox Margin="0 0 0 20" Name="SerNumb"></TextBox>
+            <TextBlock Text="Гарантия" FontSize="15"></TextBlock>
+            <TextBox Margin="0 0 0 20" Name="Garant"></TextBox>
+
+            <TextBlock Text="Состояние" FontSize="15"></TextBlock>
+            <ComboBox Name="ComboState" Margin="0 0 0 20" SelectionChanged="ComboState_SelectionChanged">
+                <ComboBoxItem>
+                    <TextBlock Text="В использовании"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="Пустой"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="В ремонте"></TextBlock>
+                </ComboBoxItem>
+            </ComboBox>
+            
+            <TextBlock Text="Отправить на ремонт" FontSize="15"></TextBlock>
+            <ComboBox Name="ComboRepair" Margin="0 0 0 20" SelectionChanged="ComboRepair_SelectionChanged" >
+                <ComboBoxItem>
+                    <TextBlock Text="Принят"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="Производится ремонт"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="Ремонт выполнен"></TextBlock>
+                </ComboBoxItem>
+            </ComboBox>
+
+            <TextBlock Text="Коментарий" FontSize="15"></TextBlock>
+            <TextBox Margin="0 0 0 20" Name="Coment"></TextBox>
+            <Button Content="Сохранить" FontSize="20" Name="SaveCartrige" Click="SaveCartrige_Click" ></Button>
+        </StackPanel>
+    </Grid>
+</Window>
