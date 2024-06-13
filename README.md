@@ -47,7 +47,5 @@
 ![Окно редактирования](https://github.com/qwerzxcvbn/CartridgeManagementSystem/blob/main/Image/Redactcart.png) </br>
 **Окно редактирования**
 </br> </br> </br>
-![Видео](https://github.com/qwerzxcvbn/CartridgeManagementSystem/blob/main/Video/bandicam%202024-06-13%2009-06-24-050.mp4) </br>
-**Видео**
-</br> </br> </br>
+
 
